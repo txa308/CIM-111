@@ -1,0 +1,8 @@
+a{
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: grey;
+}
