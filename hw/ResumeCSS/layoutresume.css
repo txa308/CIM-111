@@ -1,3 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i&display=swap');
+
+
+#headings{
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 30pt;
+  text-decoration: underline;
+}
+
+#company{
+  font-size: 25pt;
+  font-family: 'Cabin Sketch',cursive;
+}
+
+#date{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18pt;
+}
+
+
+
+body{
+  background-color: #FFFFF0;
+}
+
 a{
   color: orange;
   text-decoration: none;
@@ -5,4 +32,40 @@ a{
 
 a:hover{
   background-color: grey;
+}
+
+
+ul li{
+  list-style: square;
+  font-size: 15pt;
+  font-family: 'Poppins',sans-serif;
+}
+
+#contact{
+  text-align: center;
+  font-size: 25pt;
+  font-family: 'Poppins',sans-serif;
+}
+tr{
+  font-size: 25pt;
+  font-family: 'Poppins',sans-serif;
+}
+
+#name{
+  text-align: center;
+  font-size: 50pt;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+#link{
+  font-family: 'Poppins',sans-serif;
+  font-size: 15pt;
+}
+
+.alignleft{
+  float: left;
+}
+
+.alignright{
+  float: right;
 }
