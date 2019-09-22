@@ -65,6 +65,7 @@ tr{
 .alignleft{
   float: left;
 }
+    /* float is the new feature */
 
 .alignright{
   float: right;
