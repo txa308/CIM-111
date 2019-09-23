@@ -3,18 +3,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,400i&display=swap');
 
 
-#headings{
+.headings{
   font-family: 'Cabin Sketch', cursive;
   font-size: 30pt;
   text-decoration: underline;
 }
 
-#company{
+.company{
   font-size: 25pt;
   font-family: 'Cabin Sketch',cursive;
 }
 
-#date{
+.date{
   font-family: 'Poppins', sans-serif;
   font-size: 18pt;
 }
@@ -41,11 +41,14 @@ ul li{
   font-family: 'Poppins',sans-serif;
 }
 
-#contact{
+.contact{
   text-align: center;
   font-size: 25pt;
   font-family: 'Poppins',sans-serif;
+
 }
+
+
 tr{
   font-size: 25pt;
   font-family: 'Poppins',sans-serif;
@@ -57,7 +60,7 @@ tr{
   font-family: 'Cabin Sketch', cursive;
 }
 
-#link{
+.link{
   font-family: 'Poppins',sans-serif;
   font-size: 15pt;
 }
