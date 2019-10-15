@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+#Home{
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+h1{
+  font-family: 'Permanent Marker', cursive;
+}
+
+p{
+  font-family: 'Karla', sans-serif;
+}
+
+nav{
+  background-color: #FFFFF0;
+  width: 700px;
+  margin: 0 auto;
+  border-width: 2px 2px 2px 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  margin-left: -10px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+nav ul li:hover{
+  background-color: #E0FFFF;
+}
+
+header{
+  background-color: #E0FFFF;
+  width: 1000px;
+  height: auto;
+  padding: 20px 20px 20px 20px;
+
+  border-width: 5px 5px 5px 5px;
+  border-color: black;
+  border-style: solid;
+
+  margin: 10px auto 30px auto;
+  margin: 0 auto;
+}
+
+main{
+    background-color: #E0FFFF;
+    width: 1000px;
+
+    height: auto;
+    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+  }
+
+  #History{
+    text-align: center;
+  }
+
+  #grid1{
+    width: 900px;
+    height: 375px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 250px;
+    grid-template-columns: 650px 200px;
+  }
+
+    #grid1 img{
+      width: 625px;
+      height: 350px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    #Activities{
+      text-align: center;
+    }
+
+    #grid2 > p {
+      grid-area: a;
+    }
+    #grid2 > img {
+      grid-area: b c;
+    }
+
+
+    #grid2{
+      width: 900px;
+      height: 500px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-areas: "a a"
+                           "b c";
+      grid-column-gap: 10px;
+
+    }
+
+    #grid2 img{
+      width: 450px;
+      height: 300px;
+      margin: 0 auto;
+
+    }
+
+    #SpringBreak{
+      text-align: center;
+    }
+
+    #grid3 > p {
+      grid-area: a;
+    }
+
+    #grid3 > img {
+      grid-area: b c;
+    }
+
+    #grid3{
+      width: 900px;
+      height: auto;
+      margin: 0 auto;
+      display: grid;
+      grid-template-areas: "a b c";
+      grid-column-gap: 10px;
+     }
+
+     #grid3 img{
+       width: 350px;
+       height: 400px;
+     }
+
+    #HurricaneMichael{
+      text-align: center;
+    }
+
+    #grid4 > p{
+      grid-area: a;
+    }
+
+    #grid4 > img{
+      grid-area: b c d;
+    }
+
+    #grid4{
+      width: 900px;
+      height: auto;
+      margin: 0 auto;
+      display: grid;
+      grid-template-areas: "b a"
+                           "c d";
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+    }
+
+    #michael1{
+      width: 460px;
+      height: 450px;
+
+    }
+
+    .michael23{
+      width: 460px;
+      height: 350px;
+    }

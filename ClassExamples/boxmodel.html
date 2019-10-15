@@ -4,77 +4,132 @@
     <meta charset="utf-8">
     <title>Box Model</title>
 
-    <style>
+    <style media="screen">
+
       header{
         background-color: green;
-        width: 920px;
-        height: 100px;
-        padding: 20px 20px 20px 20px;
-          <!-- top, right, bottom, left -->
-        border-width: 0px 0px 5px 0px;
-        border-color: black;
+        width: 960px;
+        /* height: 100px; */
+        height: auto;
+
         border-style: solid;
+        border-width: 0px 0px 5px 0px;
 
-        margin: 10px auto 30px auto;
-        margin-top: -10px;
-
+        margin: -20px auto 30px auto;
+        /* if you use auto, you need to have a width dimension on the area */
       }
 
       main{
-        background-color: yellow;
-        width: 910px;
-        <!-- height: 100px; -->
-        height: auto;
-        padding: 20px;
-        <!-- add inner spacing 20px, top, right, bottom, left -->
+        background-color: orange;
 
-        padding-top: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
+        width: 910px; /* width adjusted for padding and border */
+        height: auto;
+
+        padding: 20px;
+        /* padding-top: 20px; */
+        /* can individually adjust padding */
+        /* padding: 20px 20 px 20 px 20px; top right bottom left */
 
         border-width: 5px;
-        border-style: dashed;
-        border-color: rgb(0,127,0);
+        border-style: groove;
+        border-color: red;
 
         margin-top: 10px;
         margin-right: auto;
-        margin-bottom: 20px;
+        margin-bottom: 2px;
         margin-left: auto;
-
-
+        /* trick to put area in center of page */
       }
 
       footer{
-        background-color: green;
+        background-color: skyblue;
         width: 960px;
         height: 100px;
+        /* can't use auto height for footer or it will collapse on itself with no info */
 
         margin: 0px auto;
+        /* top + bottom, left + right */
+      }
 
+      nav{
+        background-color: skyblue;
+        width: 400px;
+        margin: 0 auto;
+      }
+
+      nav ul{
 
       }
 
+      nav ul li{
+        list-style: none;
+        display: inline-block; /* puts text next to each other */
+        margin-right: 20px;
+        padding: 10px;
+      }
+
+      nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+      }
+
+      nav ul li:hover{
+        background-color: white;
+      }
+
+      section img{
+        width: 435px;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      section p{
+        width: 435px;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+        vertical-align: top;
+      }
     </style>
-
-
-
-
   </head>
 
-
   <body>
+
     <header>
-        <h1>Header</h1>
+      <h1 id="Home">Header</h1>
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li> <!-- can link an id with # -->
+          <li><a href="#AboutMe">About Me</a></li>
+          <li><a href="#Hobbies">Hobbies</a></li>
+        </ul>
+      </nav>
+
     </header>
-  <main>
-        <h1>Main</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </main>
 
-  <footer>
+    <main>
+      <section>
+      <h1 id="AboutMe">Main</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
 
-  </footer>
+    <section>
+      <img src="https://live.staticflickr.com/2057/2077176100_48f2e74642_b.jpg" alt="image1">
+      <p>Text next to image 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <section>
+      <p>Text next to image 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <img src="https://live.staticflickr.com/8218/8324809488_97893bb073_b.jpg" alt="image2">
+    </section>
+    </main>
+
+    <footer>
+      <h1 id="Hobbies">Footer</h1>
+    </footer>
 
   </body>
+
 </html>
