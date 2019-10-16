@@ -186,3 +186,7 @@ main{
       width: 460px;
       height: 350px;
     }
+
+    footer{
+      text-align: center;
+    }
