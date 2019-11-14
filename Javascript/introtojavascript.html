@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to JavaScript</title>
+
+  </head>
+
+  <body>
+    <h1>Turn Orange</h1>
+    <h1>This is also Orange</h1>
+    <h2 id="underline">This is Underline</h2>
+
+    <p id="changetext">This text is awesome</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        //single line comment
+        //when document is ready run actions
+
+        $("h1").css("color","Orange");
+        $("#underline").css("text-decoration", "underline");
+        $("#changetext").html("this text was changed")
+        
+
+
+      });
+    </script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chicago</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+
+
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <img id="skyline" src="https://cdn.pixabay.com/photo/2017/10/16/23/02/chicago-2858987_1280.png" alt="skyline">
+        <div class="centered">The City of Chicago</div>
+      </div>
+
+      <nav>
+          <ul>
+            <li><a href="#Introduction">Introduction</a></li>
+            <li><a href="#History">History</a></li>
+            <li><a href="#Activities">Activities</a></li>
+            <li><a href="#Sports">Sports</a></li>
+            <li><a href="#Food">Food</a></li>
+
+          </ul>
+      </nav>
+
+
+    </header>
+
+    <main>
+
+
+      <div><h1 id="Introduction">Introduction</h1><span class="tip">Click below to view content</span></div>
+      <p id="Introductionshow">Click to view the introduction</p>
+      <p id="Introinfo">Located on the shores of freshwater Lake Michigan, Chicago was incorporated as a city in 1837 near a portage between the Great Lakes and the Mississippi River watershed and grew rapidly in the mid-19th century. Chicago, officially the City of Chicago, is the most populous city in the U.S. state of Illinois and the third most populous city in the United States. With an estimated population of 2,705,994 (2018), it is also the most populous city in the Midwestern United States. Chicago is the county seat of Cook County, the second most populous county in the US. Chicago is the principal city of the Chicago metropolitan area, often referred to as Chicagoland. At nearly 10 million people, the metropolitan area is the third most populous in the nation. The city is a hub for tourism and offers many attractions and activities. It is home to 8 professional sports teams and offers its own unique cuisine.</p>
+
+<br>
+<br>
+
+  <div><h1 id="History">History</h1><span class="tip">Mouse over to learn more about the history of Chicago</span></div>
+  <section class="grid1">
+      <img src="Images/skyline.jpg" alt="skyline">
+      <p id="historyinfo">Mouse over to show more about the history of Chicago</p>
+      <p id="addhisinfo"></p>
+  </section>
+
+  <div><h1 id="Activities">Activities</h1><span class="tip">Mouse over to learn about activities</span></div>
+  <section class="grid2">
+      <p id="activinfo">Mouse over to show more about things to do in Chicago</p>
+      <p id="addactivinfo"></p>
+      <img src="Images/buckingham.jpg" alt="buckingham">
+  </section>
+
+<div><h1 id="Sports">Sports</h1><span class="tip">Mouse over to learn about the sports Chicago has to offer</span></div>
+  <section class="grid4">
+      <img src="Images/cubs.jpg" alt="cubs">
+      <p id="sportsinfo">Mouse over to show more about the sports in Chicago</p>
+      <p id="addsportsinfo"></p>
+  </section>
+
+<div><h1 id="Food">Food</h1><span class="tip">Mouse over to learn about Chicago's food scene</span></div>
+  <section class="grid3">
+      <p id="foodinfo">Mouse over to show more about Chicago's famous food</p>
+      <p id="addfoodinfo"></p>
+      <img src="Images/pizza.jpg" alt="pizza">
+      <img src="Images/hotdog.jpg" alt="hotdog">
+  </section>
+
+
+
+
+
+  <script src="https://code.nath.co/src/jQuery.min.js"></script>
+  <script src="https://rawgit.com/nathco/jQuery.mousetip/master/jQuery.mousetip.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+      $("#Introinfo").hide();
+
+      $("#Introductionshow").click(function(){
+        $("#Introinfo").show();
+
+    });//end of intro
+
+      $("#historyinfo").mouseenter(function(){
+        $("#addhisinfo").html("On August 12, 1833, the Town of Chicago was organized with a population of about 200. Within seven years it grew to more than 6,000 people. The City of Chicago was incorporated on Saturday, March 4, 1837, and for several decades was the world's fastest-growing city. As the site of the Chicago Portage, the city became an important transportation hub between the eastern and western United States. Chicago's first railway, Galena and Chicago Union Railroad, and the Illinois and Michigan Canal opened in 1848. Manufacturing and retail and finance sectors became dominant, influencing the American economy. In 1871 the Great Chicago Fire occurred, which destroyed several square miles and left more than 100,000 homeless, the city made a concerted effort to rebuild. The construction boom accelerated population growth throughout the following decades, and by 1900, less than 30 years after the great fire, Chicago was the fifth-largest city in the world.  In 1919, The ratification of the 18th amendment to the Constitution made the production and sale of alcoholic beverages illegal in the United States. This ushered in the beginning of what is known as the Gangster Era, a time that roughly spans from 1919 until 1933 when Prohibition was repealed. The 1920s saw gangsters, including Al Capone, Dion O'Banion, Bugs Moran and Tony Accardo battle law enforcement and each other on the streets of Chicago during the Prohibition era. The city also hosted the tumultuous 1968 Democratic National Convention, which featured physical confrontations both inside and outside the convention hall, with anti-war protesters, journalists and bystanders being beaten by police. Major construction projects took place in the late 60s and early 70s, including the Sears Tower (now known as the Willis Tower, which in 1974 became the world's tallest building), University of Illinois at Chicago, McCormick Place, and O'Hare International Airport.")
+
+
+      });//end of histroy
+
+      $("#activinfo").mouseenter(function(){
+        $("#addactivinfo").html("Chicago has plenty of amazing activities to offer to any visitor. Pictured to the right is Buckingham fountain located in Grant Park. Dedicated in 1927, it is one of the largest fountains in the world. It operates from April to October, with regular water shows and evening color-light shows. During the winter, the fountain is decorated with festival lights. Another famous sightseeing attraction, Cloud Gate (more commonly known as The Bean), can be found in neighboring Millennium Park. Chicago is also home to a vast number of museums including the Art Institute of Chicago, the Museum of Science and Industry, the Museum of Contemporary Art, the Field Museum and the Alder Planetarium as well as many more. Chicago is also home to the Lincoln Park Zoo and Shedd Aquarium. Observatory Decks located in the Willis Tower or the John Hancock Building provide great overviews of the city and are popular attractions. Chicago’s number one attraction is often considered the Navy Pier. Navy Pier attractions include sightseeing tours, restaurants, and shops for visitors to enjoy. The City of Chicago has plenty of other attractions, but these are often considered the best and most popular.")
+
+
+      });//end of activities
+
+      $("#sportsinfo").mouseenter(function(){
+        $("#addsportsinfo").html("Chicago is one of ten U.S. cities to have teams from the five major American professional team sports (baseball, football, basketball, hockey, soccer). Chicago has been named as the Best Sports City by Sporting News three times in 1993, 2006 and 2010. Chicago Sports also carry a lot of history and legacy. The NFL’s Chicago team is the Chicago Bears who play at Soldier Field and have one championship. Chicago is home to two MLB teams; the Cubs and the White Sox. Pictured to the left is historic Wrigley Field which is home to the Chicago Cubs and is the second oldest stadium in the MLB (built in 1914). The Cubs and White Sox both hold 3 championships. The NBA’s team is the Chicago Bulls who hold six championships all of which coming during the Michael Jordan era. The NHL’s Chicago team is the Chicago Blackhawks and are one of the original six NHL teams and also hold six championships. Chicago is also home to an MLS team, the Chicago Fire. Chicago also has a women’s basketball team as well as a women’s soccer team named the Chicago Sky and Red Stars respectively. All in all, Chicago is home to 8 professional sports teams and offers a multitude of options for sports fans to enjoy.")
+
+
+      });//end of sports
+
+      $("#foodinfo").mouseenter(function(){
+        $("#addfoodinfo").html("Chicago lays claim to a large number of regional specialties that reflect the city's ethnic and working-class roots. The most popular Chicago-style foods are: The Chicago-style pizza is deep-dish pizza with a tall outer crust and large amounts of cheese, with chunky tomato sauce on top of the cheese instead of underneath it. The Chicago-style hot dog, traditionally a steamed or boiled, natural-casing all-beef wiener on a poppy-seed bun, topped with yellow mustard, chopped onion, sliced tomato, neon-green sweet-pickle relish, sport peppers, a dill pickle spear, and a sprinkling of celery salt—but never ketchup. Both of the foods are pictured below. The Italian beef is another staple of Chicago. It is a sandwich featuring thinly sliced roast beef simmered in a broth containing Italian-style seasonings and served on an Italian roll soaked in the meat juices. Most beef stands offer a cheesy beef option, which is typically the addition of a slice of provolone or mozzarella. A combo is a beef sandwich with the addition of grilled Italian sausage. Italian beef sandwiches are traditionally topped with sweet peppers or spicy giardiniera.")
+
+
+      });//end of food
+
+      $(function() {
+          $('div').mousetip('.tip', 20, 30);
+      });
+
+
+    });
+
+      </script>
+
+  </main>
+
+
+  <footer>
+
+  </footer>
+
+  </body>
+</html>

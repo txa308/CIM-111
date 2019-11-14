@@ -1,0 +1,162 @@
+  @import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+
+header{
+  width: 1200px;
+  height: 600px;
+  margin: 10px auto 30px auto;
+  margin: 0 auto;
+}
+
+nav{
+  width: 1000px;
+  margin: 0 auto;
+  border-width: 2px 2px 2px 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-family: 'Libre Baskerville', serif;
+
+}
+
+#skyline{
+  width: 1200px;
+  height: 425px;
+
+}
+
+ .container{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 80px;
+    font-family: 'Ultra', serif;
+
+  }
+
+  .centered{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  h1{
+    text-align: center;
+    font-family: 'Ultra', serif;
+
+  }
+
+  .grid1 > p {
+    grid-area: a b;
+  }
+  .grid1 > img {
+    grid-area: c;
+  }
+
+  .grid1{
+    display: grid;
+    grid-template-areas: "c a"
+                         "c b";
+    grid-column-gap: 20px;
+    padding: 20px;
+  }
+
+  .grid2 > p {
+    grid-area: a b;
+  }
+  .grid2 > img {
+    grid-area: c;
+  }
+
+  .grid2{
+    display: grid;
+    grid-template-areas: "a c"
+                         "b c";
+    grid-column-gap: 20px;
+    padding: 20px;
+
+  }
+
+  .grid3 > p {
+    grid-area: a b;
+  }
+  .grid3 > img {
+    grid-area: c d;
+  }
+
+  .grid3{
+    display: grid;
+    grid-template-areas: "a b"
+                         "c d";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+
+
+
+  p{
+    font-family: 'Libre Baskerville', serif;
+  }
+
+  .grid4 > p {
+    grid-area: a b;
+  }
+  .grid4 > img {
+    grid-area: c;
+  }
+
+  .grid4{
+    display: grid;
+    grid-template-areas: "c a"
+                         "c b";
+    grid-column-gap: 20px;
+    padding: 20px;
+  }
+
+.grid1 img{
+  width: 750px;
+  height: 590px;
+}
+
+.grid2 img{
+  width: 900px;
+  height: 500px;
+}
+
+.grid3 img{
+  width: 700px;
+  height: 400px;
+}
+
+.grid4 img{
+  width: 900px;
+  height: 500px;
+}
+
+#Introductionshow{
+  text-align: center;
+}
+
+.tip{
+  position: absolute;
+  z-index: 2;
+  display: none;
+  
+}
