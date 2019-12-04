@@ -22,7 +22,7 @@
 
       gtag('config', 'UA-153853232-1');
     </script>
-    
+
   </head>
 
 
@@ -91,15 +91,32 @@
     <h1 id="Enjoy">Enjoy!</h1>
     <section class="grid1">
       <img src="https://www.dunesofpanama.com/wp-content/uploads/2019/07/panama-city-beach-florida-800x450.jpg" alt="water">
-      <p>We hope this website has educated you on all that Panama City Beach has to offer. Panama City Beach is a beautiful place that provides a great experience to all those who visit. We hope you visit as we know you will have a blast! The emerald green waters will be waiting!</p>
+      <p id="Enjoyinfo">We hope this website has educated you on all that Panama City Beach has to offer. Panama City Beach is a beautiful place that provides a great experience to all those who visit. We hope you visit as we know you will have a blast! The emerald green waters will be waiting!</p>
     </section>
 
 
     </main>
     <footer>
-      <p>Contact: txa308@miami.edu</p>
+      <p id="Contact">To reveal contact information please click</p>
+      <p id="Contactinfo">Contact: txa308@miami.edu</p>
 
     </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+      $("#Contactinfo").hide();
+
+      $("#Contact").click(function(){
+        $("#Contactinfo").show();
+
+    });
+
+    });
+    </script>
+
 
 
 
